@@ -1,0 +1,59 @@
+body { 
+    font-family: 'Arial', sans-serif; 
+    background: linear-gradient(135deg, #6e8efb, #a777e3); 
+    color: #fff; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+.container { 
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 15px; 
+    padding: 20px; 
+    max-width: 600px; 
+    width: 100%; 
+    text-align: center; 
+}
+
+h1 { 
+    font-family: 'Segoe UI', sans-serif; 
+    margin-bottom: 20px; 
+}
+
+input { 
+    width: calc(100% - 20px); 
+    border-radius: 10px; 
+    padding: 10px; 
+    border: none; 
+    margin-bottom: 10px; 
+}
+
+button { 
+    background: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    margin: 5px;
+}
+
+button:hover { 
+    background: #45a049; 
+}
+
+.result-section { 
+    margin-top: 20px; 
+    background: rgba(255, 255, 255, 0.2); 
+    padding: 10px; 
+    border-radius: 10px; 
+}
+
+.player-input { 
+    margin-bottom: 15px; 
+}

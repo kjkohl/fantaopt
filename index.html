@@ -1,55 +1,29 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    padding: 20px;
-    max-width: 600px;
-    width: 100%;
-    text-align: center;
-}
-
-h1 {
-    font-family: 'Segoe UI', sans-serif;
-    margin-bottom: 20px;
-}
-
-textarea {
-    width: calc(100% - 20px);
-    height: 100px;
-    border-radius: 10px;
-    padding: 10px;
-    border: none;
-    margin-bottom: 20px;
-}
-
-button {
-    background: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background: #45a049;
-}
-
-.result-section {
-    margin-top: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 10px;
-    border-radius: 10px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Football Optimizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fantasy Football Optimizer</h1>
+        <form id="teamForm">
+            <div id="playerInputs">
+                <div class="player-input">
+                    <input type="text" class="player-name" placeholder="Player Name" required>
+                    <input type="number" class="player-points" placeholder="Points" required>
+                    <input type="text" class="player-status" placeholder="Status (Injured, Questionable, etc.)">
+                </div>
+            </div>
+            <button type="button" id="addPlayer">Add Another Player</button>
+            <button type="submit" id="optimizeButton">Optimize</button>
+        </form>
+        <div id="resultSection" class="result-section">
+            <!-- Results will appear here -->
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
